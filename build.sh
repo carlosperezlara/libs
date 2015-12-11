@@ -1,6 +1,7 @@
 export MYLIBS_SOURCE_HOME=`pwd`
 export MYLIBSHOME=${MYLIBS_SOURCE_HOME}/inst
-mkdir ${MYLIBSHOME}
+mkdir -p ${MYLIBSHOME}/lib
+mkdir -p ${MYLIBSHOME}/inc
 
 export MYLIBS_CPFLAGS=" -g -c -Wall -fPIC -I ${MYLIBS_SOURCE_HOME}/inc"
 export MYLIBS_LKFLAGS=" -shared -WL,-soname,"
